@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-dark p-3">
+
+    <!-- Versão escuro testar    -->
+    <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+        <label class="form-check-label" for="mySwitch">Dark Mode</label>
+      </div>
+
+    
+    
+   <header>
+    <h1>Calculadora de IMC</h1>
+</header>
+    <section>
+        <div>
+            Insira sua altura
+            <input type="number" class="form-control" placeholder="Ex: 1.50" id="txtalt">
+            
+        </div>
+        <div>
+            Insira seu peso atual
+            <input type="number" class="form-control" placeholder="Ex: 60" id="txtpeso">
+            
+        </div>
+
+        <p>
+            <button type="button" class="btn btn-success" onclick="verificar()">verificar</button>
+            <button type="button" class="btn btn-danger" onclick="window.location.reload()">reset</button>
+        </p>
+        
+        
+
+        <div id="res">
+            Resultado...
+        </div>
+            
+        
+    </section>
+    <div id="tabela">
+        <img src="tabela-imc.png" class="img-thumbnail" alt="Cinque Terre">
+    </div>
+    
+    <footer>
+        <p>&copy; Lucas em ação</p>
+    </footer>
+<script src="script.js"></script>
+
+</body>
+</html>
